@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${GBDKDIR}include/**"
+            ]
+        }
+    ],
+    "version": 4
+}
