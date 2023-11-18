@@ -7,6 +7,12 @@
             "linux": {
                 "command": "bash make.sh"
             },
+            "osx":{
+                "command": "bash ./make-mac.sh",
+            },
+            "windows":{
+                "command": "make-windows.bat"
+            },
             "problemMatcher": [
                 "$gcc"
             ],
@@ -15,5 +21,6 @@
                 "isDefault": true
             }
         }
+
     ]
 }

@@ -3,7 +3,19 @@
         {
             "name": "Linux",
             "includePath": [
-                "${GBDKDIR}include/**"
+                "${GBDKDIR}include/**",
+            ]
+        },
+        {
+            "name": "Mac",
+            "includePath": [
+                "${GBDKDIR}/include/**",
+            ],
+        },
+        {
+            "name": "Windows",
+            "includePath": [
+                "${GBDKDIR}\\include\\**"
             ]
         }
     ],

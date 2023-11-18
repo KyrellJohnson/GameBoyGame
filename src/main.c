@@ -12,6 +12,8 @@ int main(void)
 
 	SHOW_SPRITES;
 
+	printf("WOW");
+
 	while (1)
 	{
 
