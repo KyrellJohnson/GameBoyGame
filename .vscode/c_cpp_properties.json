@@ -3,21 +3,22 @@
         {
             "name": "Linux",
             "includePath": [
-                "${GBDKDIR}include/**",
+                "${workspaceFolder}/**",
+                "/home/kyrell/sdks/gbdk/include/**"
             ]
         },
         {
             "name": "Mac",
             "includePath": [
-                "${GBDKDIR}/include/**",
-            ],
+                "${GBDKDIR}/include/**"
+            ]
         },
         {
             "name": "Windows",
             "includePath": [
                 "${GBDKDIR}\\include\\**"
             ]
-        }
+        },
     ],
     "version": 4
 }

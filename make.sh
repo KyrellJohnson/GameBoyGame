@@ -5,20 +5,24 @@ rm *.gb
 cd ..
 
 # Compile .c files into .o files
-cd src
-lcc -c -o *.o *.c
+cd resources
+/home/kyrell/sdks/gbdk/bin/lcc -c -o *.o *.c
 cd ..
 
+cd src
+/home/kyrell/sdks/gbdk/bin/lcc -c -o *.o *.c
+cd ..
 # Compile a GB file from the compiled .o files
-lcc -o build/game.gb src/*.o #src/main.o src/player.o
+/home/kyrell/sdks/gbdk/bin/lcc -o build/game.gb resources/*.o src/*.o #src/main.o src/player.o
+echo 2
 
 # Delete intermediate files
-rm src/*.asm
-rm src/*.lst
-rm src/*.ihx
-rm src/*.sym
-rm src/*.o
+rm **/*.asm
+rm **/*.lst
+rm **/*.ihx
+rm **/*.sym
+rm **/*.o
 rm build/*.ihx
 
 # run the game in the emulator
-snap run sameboy "${PWD}/build/game.gb"
+# snap run sameboy "${PWD}/build/game.gb"
